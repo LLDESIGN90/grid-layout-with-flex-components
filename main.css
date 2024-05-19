@@ -2,8 +2,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
   }
-  
+
+  /*styling for the emoji cards using grid properties*/
+
+  .emojis{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 20px;
+
+  }
+
+  /*flex container*/
+
   .emoji {
+    display: flex;
+    flex-direction:column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
@@ -20,11 +33,14 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    margin-top: auto;
   }
-  
+
+  /*align the icons to the center and position top*/
+
   .icon {
     font-size: 4rem;
+    text-align: center;
+    order: -1;
   }
-  
-  
   
